@@ -1,0 +1,5 @@
+<div>
+<%= form_with url: post_show_path, method: :get do %>
+<%= @post&.title || "Title not available" %>
+<% end %>
+</div>
