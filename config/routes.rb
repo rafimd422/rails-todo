@@ -3,6 +3,6 @@ Rails.application.routes.draw do
   get "/about", to: "root#about"
   get "getjson", to: "root#api"
   post "/add", to: "root#add"
-  # get "/add/:id", to: "root#show", as: post_show
+  patch "/post/:id", to: "root#update",  as: "update_post"
   delete "/post/:id", to: "root#destroy"
 end
